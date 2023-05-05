@@ -20,8 +20,7 @@ var (
 	help string
 )
 
-func Root() *cobra.Command {
-	params := &flags.Params{}
+func Root(params *flags.Params) *cobra.Command {
 
 	cmd := &cobra.Command{
 		Use:   "tkn-results",
